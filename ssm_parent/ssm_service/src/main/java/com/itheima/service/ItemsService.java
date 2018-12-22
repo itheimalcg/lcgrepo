@@ -2,6 +2,8 @@ package com.itheima.service;
 
 import com.itheima.domain.Items;
 
+import java.util.List;
+
 /**
  * @Package: com.itheima.service
  * @author: lichangguo
@@ -10,4 +12,5 @@ import com.itheima.domain.Items;
  */
 public interface ItemsService {
    public Items findById(Integer id);
+   public List<Items>findAll();
 }

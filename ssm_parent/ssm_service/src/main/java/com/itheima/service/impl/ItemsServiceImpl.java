@@ -6,6 +6,8 @@ import com.itheima.service.ItemsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @Package: com.itheima.service.impl
  * @author: lichangguo
@@ -19,5 +21,9 @@ public class ItemsServiceImpl implements ItemsService {
 
     public Items findById(Integer id) {
         return itemsDao.findById(id);
+    }
+
+    public List<Items> findAll() {
+        return itemsDao.findAll();
     }
 }
